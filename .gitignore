@@ -1,0 +1,17 @@
+# Antigravity runtime data
+antigravity/brain/
+antigravity/browser_recordings/
+antigravity/context_state/
+antigravity/conversations/
+antigravity/html_artifacts/
+antigravity/implicit/
+antigravity/knowledge/
+antigravity/playground/
+antigravity/installation_id
+antigravity/mcp_config.json
+
+# Browser profile
+antigravity-browser-profile/
+
+# macOS
+.DS_Store
