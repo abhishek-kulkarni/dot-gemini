@@ -28,7 +28,7 @@ As a [role], I want to [action], so that [benefit]
 
 ### Step 2: [RED] Write Failing Tests
 
-Write comprehensive tests BEFORE any production code. Include:
+Delegate to the `@tdd-guide` agent to write comprehensive tests BEFORE any production code. Include:
 
 1. **Happy path** — The core expected behavior.
 2. **Security boundary** — Verify unauthorized users are rejected.
@@ -66,7 +66,7 @@ git add -A && git commit -m "test: add failing tests for [feature]"
 
 ### Step 3: [GREEN] Minimal Implementation
 
-Write the **minimum** code to make all tests pass. No more.
+Delegate to the `@tdd-guide` agent to write the **minimum** code to make all tests pass. No more.
 
 - Keep functions under 50 lines.
 - Use immutable patterns (spread, copyWith, frozen dataclasses).

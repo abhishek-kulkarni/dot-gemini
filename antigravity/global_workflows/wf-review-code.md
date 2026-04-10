@@ -45,11 +45,11 @@ Based on detected languages, invoke the appropriate reviewer:
 
 | Detected Language | Agent to Invoke | Priority |
 |-------------------|-----------------|----------|
-| Python (`.py`) | **python-reviewer** | First (specialized) |
-| Flutter/Dart (`.dart`) | **flutter-dart-code-review** | First (specialized) |
-| Any language | **code-reviewer** | Always (general quality) |
+| Python (`.py`) | `@py-code-reviewer` | First (specialized) |
+| Flutter/Dart (`.dart`) | `@flutter-dart-code-reviewer` | First (specialized) |
+| Any language | `@code-reviewer` | Always (general quality) |
 
-> **Note**: For Python projects, run `python-reviewer` first. For Flutter/Dart projects, run `flutter-dart-code-review` first. Then run `code-reviewer` for general quality checks (immutability, coverage, git workflow).
+> **Note**: For Python projects, run `@py-code-reviewer` first. For Flutter/Dart projects, run `@flutter-dart-code-reviewer` first. Then run `@code-reviewer` for general quality checks (immutability, coverage, git workflow).
 
 ### Step 3: Run Security Review
 
@@ -62,13 +62,13 @@ Based on detected languages, invoke the appropriate reviewer:
 - External API integrations
 - Dependency updates (`package.json`, `pubspec.yaml`, `requirements.txt`, `pom.xml`)
 
-Invoke: **security-reviewer**
+Invoke: `@security-reviewer`
 
 ### Step 4: Verify Test Coverage
 
 If the reviewers flag coverage gaps (< 95%), invoke:
 
-Invoke: **tdd-guide** — to help write missing tests using the Red-Green-Refactor cycle.
+Invoke: `@tdd-guide` — to help write missing tests using the Red-Green-Refactor cycle.
 
 ### Step 5: Consolidate & Report
 
@@ -92,16 +92,16 @@ Combine all findings into a single unified report:
 
 | Agent | CRITICAL | HIGH | MEDIUM | LOW | Verdict |
 |-------|----------|------|--------|-----|---------|
-| code-reviewer | 0 | 1 | 2 | 0 | BLOCK |
-| security-reviewer | 0 | 0 | 1 | 0 | APPROVE |
-| python-reviewer | 0 | 0 | 0 | 3 | APPROVE |
-| flutter-dart-code-review | 0 | 0 | 1 | 0 | APPROVE |
+| `@code-reviewer` | 0 | 1 | 2 | 0 | BLOCK |
+| `@security-reviewer` | 0 | 0 | 1 | 0 | APPROVE |
+| `@py-code-reviewer` | 0 | 0 | 0 | 3 | APPROVE |
+| `@flutter-dart-code-reviewer` | 0 | 0 | 1 | 0 | APPROVE |
 
 **Overall Verdict**: BLOCK — Resolve 1 HIGH issue before merge.
 
 ## Suggested Next Steps
-- Call **tdd-guide** to write missing tests.
-- Call **refactor-cleaner** to address dead code findings.
+- Call `@tdd-guide` to write missing tests.
+- Call `@refactor-cleaner` to address dead code findings.
 ```
 
 ## Decision Matrix

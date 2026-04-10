@@ -53,7 +53,7 @@ Identify:
 
 ### Step 3: Security Audit
 
-Before designing the solution, check against the security checklist:
+Before designing the solution, invoke the `@security-reviewer` agent (or mentally check) against the security checklist:
 
 - [ ] No hardcoded API keys, passwords, or tokens
 - [ ] All external input validated at boundaries
@@ -66,7 +66,7 @@ Document how each point will be addressed in the plan.
 
 ### Step 4: Design the Solution
 
-Structure the plan with clear phases:
+Delegate to the `@planner` agent to structure the plan with clear phases:
 
 **Phase sizing:**
 - **Phase 1**: Minimum viable — smallest slice that provides value

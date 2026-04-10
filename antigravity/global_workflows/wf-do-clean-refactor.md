@@ -10,7 +10,7 @@ This workflow guides a safe, incremental refactoring session that reduces comple
 
 ## When to Use
 
-- After `code-reviewer` flags dead code or large files
+- After `@code-reviewer` flags dead code or large files
 - Before major feature work to reduce diff noise
 - Periodically as codebase maintenance
 - After removing a feature or dependency
@@ -64,7 +64,7 @@ Work through **one category at a time**. Do not mix categories in a single commi
 
 ### Step 3: Apply Refactoring (One Category)
 
-Pick the highest-priority category from Step 2 and apply fixes:
+Pick the highest-priority category from Step 2 and delegate to the `@refactor-cleaner` agent to apply fixes:
 
 **Dead code removal:**
 ```bash
