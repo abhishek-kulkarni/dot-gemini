@@ -16,12 +16,15 @@ Generate a descriptive yet concise conventional commit message based on the actu
 
 ```bash
 # Check staged changes first
-git diff --staged --stat
-git diff --staged
+git --no-pager diff --staged --stat
+git --no-pager diff --staged
 
-# If nothing staged, check unstaged
-git diff --stat
-git diff
+# Check unstaged changes
+git --no-pager diff --stat
+git --no-pager diff
+
+# Check for new untracked files
+git status --short
 ```
 
 ### Step 2: Analyze the Diff
@@ -103,7 +106,12 @@ Suggested commits (split recommended):
 3. test: add missing widget tests for settings screen
 ```
 
-## Output Format
+## Output Format Constraints
+
+You must output **ONLY** the raw formatted text wrapped in a single markdown code block. 
+- **DO NOT** output any conversational filler before or after the code block.
+- **DO NOT** add inline backticks around the commit messages inside the block.
+- **DO NOT** add explanatory bullet points or italicized text under the commit messages in a split recommendation.
 
 Always output exactly one of:
 
