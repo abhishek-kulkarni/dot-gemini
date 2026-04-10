@@ -1,6 +1,6 @@
 # Python Security Standards
 
-Python-specific security rules. These extend the common [security.md](../security.md).
+Python-specific security rules. These extend the common [security.md](file:///Users/abhishekkulkarni/.gemini/rules/security.md).
 
 ## Secret Management
 

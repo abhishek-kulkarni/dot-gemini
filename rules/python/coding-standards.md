@@ -1,6 +1,6 @@
 # Python Coding Standards
 
-Python-specific rules. These extend the common [coding-standards.md](../coding-standards.md).
+Python-specific rules. These extend the common [coding-standards.md](file:///Users/abhishekkulkarni/.gemini/rules/coding-standards.md).
 
 ## Standards
 

@@ -6,9 +6,9 @@ This file should be copied to the root of your Python project. It is auto-loaded
 
 Follow the Python-specific rules defined in these files:
 
-- [Python Coding Standards](file:///Users/abhishekkulkarni/.gemini/rules/python/coding-standards.md) — PEP 8, type hints, comprehensions, async patterns.
-- [Python Security](file:///Users/abhishekkulkarni/.gemini/rules/python/security.md) — SQL injection, dangerous functions, auth, dependency auditing.
-- [Python Testing](file:///Users/abhishekkulkarni/.gemini/rules/python/testing.md) — pytest, fixtures, mocking, FastAPI & Django testing.
+- [Python Coding Standards](./coding-standards.md) — PEP 8, type hints, comprehensions, async patterns.
+- [Python Security](./security.md) — SQL injection, dangerous functions, auth, dependency auditing.
+- [Python Testing](./testing.md) — pytest, fixtures, mocking, FastAPI & Django testing.
 
 ## Project Conventions
 

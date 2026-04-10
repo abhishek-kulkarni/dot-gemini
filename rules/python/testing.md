@@ -1,6 +1,6 @@
 # Python Testing Standards
 
-Python-specific testing rules. These extend the common [testing.md](../testing.md).
+Python-specific testing rules. These extend the common [testing.md](file:///Users/abhishekkulkarni/.gemini/rules/testing.md).
 
 ## Coverage Requirement: 95%+
 

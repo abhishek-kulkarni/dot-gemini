@@ -1,6 +1,6 @@
 # Dart Security Standards
 
-Dart, Flutter, and mobile-specific security rules. These extend the common [security.md](../security.md).
+Dart, Flutter, and mobile-specific security rules. These extend the common [security.md](file:///Users/abhishekkulkarni/.gemini/rules/security.md).
 
 ## Secrets Management
 

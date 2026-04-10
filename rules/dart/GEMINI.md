@@ -6,9 +6,9 @@ This file should be copied to the root of your Flutter/Dart project. It is auto-
 
 Follow the Dart-specific rules defined in these files:
 
-- [Dart Coding Standards](file:///Users/abhishekkulkarni/.gemini/rules/dart/coding-standards.md) — Null safety, sealed types, async patterns, widget rules, static analysis.
-- [Dart Security](file:///Users/abhishekkulkarni/.gemini/rules/dart/security.md) — Mobile security, WebView, data protection, secrets management.
-- [Dart Testing](file:///Users/abhishekkulkarni/.gemini/rules/dart/testing.md) — BLoC, Riverpod, widget & golden tests, fakes over mocks.
+- [Dart Coding Standards](./coding-standards.md) — Null safety, sealed types, async patterns, widget rules, static analysis.
+- [Dart Security](./security.md) — Mobile security, WebView, data protection, secrets management.
+- [Dart Testing](./testing.md) — BLoC, Riverpod, widget & golden tests, fakes over mocks.
 
 ## Project Conventions
 

@@ -1,6 +1,6 @@
 # Dart Testing Standards
 
-Dart and Flutter-specific testing rules. These extend the common [testing.md](../testing.md).
+Dart and Flutter-specific testing rules. These extend the common [testing.md](file:///Users/abhishekkulkarni/.gemini/rules/testing.md).
 
 ## Coverage Requirement: 95%+
 

@@ -1,6 +1,6 @@
 # Dart Coding Standards
 
-Dart and Flutter-specific rules. These extend the common [coding-standards.md](../coding-standards.md).
+Dart and Flutter-specific rules. These extend the common [coding-standards.md](file:///Users/abhishekkulkarni/.gemini/rules/coding-standards.md).
 
 ## Formatting
 
