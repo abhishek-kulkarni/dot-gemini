@@ -365,6 +365,7 @@ class UserError extends UserState {
 
 ### Content:
 - [ ] All user-visible strings use the localization system — no hardcoded strings in widgets
+- [ ] No hardcoded English UI strings within JSON assets, backend configuration fixtures, or Models. Use localized keys (`arb`) or bilingual mapped properties (`_en`/`_mr`) respectively.
 - [ ] Template file includes descriptions/context for translators
 - [ ] ICU message syntax used for plurals, genders, selects
 - [ ] Placeholders defined with types
