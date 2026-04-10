@@ -2,6 +2,8 @@
 
 AI agent configuration, coding rules, and automated workflows for [Gemini](https://gemini.google.com/) and [Antigravity](https://antigravity.dev/).
 
+Inspired by and adapted from [everything-claude-code](https://github.com/affaan-m/everything-claude-code).
+
 ## Structure
 
 ```
@@ -20,7 +22,17 @@ AI agent configuration, coding rules, and automated workflows for [Gemini](https
 ├── rules/                             # Always-follow coding rules
 │   ├── coding-standards.md             # Immutability, size limits, constants
 │   ├── security.md                     # Pre-commit security checklist
-│   └── delivery.md                     # Conventional commits, coverage, shipping
+│   ├── delivery.md                     # Conventional commits, coverage, shipping
+│   ├── code-review.md                  # Review triggers, severity levels, routing
+│   ├── testing.md                      # 95%+ coverage, TDD, edge cases
+│   ├── dart/                           # Dart & Flutter specific
+│   │   ├── coding-standards.md         # Null safety, sealed types, async patterns
+│   │   ├── security.md                 # Mobile security, WebView, data protection
+│   │   └── testing.md                  # BLoC, Riverpod, widget & golden tests
+│   └── python/                         # Python specific
+│       ├── coding-standards.md         # PEP 8, type hints, comprehensions
+│       ├── security.md                 # SQL injection, dangerous functions, auth
+│       └── testing.md                  # pytest, fixtures, FastAPI & Django
 └── antigravity/                       # Antigravity-specific config
     └── global_workflows/               # Slash-command workflows (/wf-*)
         ├── wf-tdd.md                   # Red-Green-Refactor TDD cycle
@@ -61,15 +73,47 @@ Step-by-step automated workflows:
 
 ## Per-Project Rules
 
-For language or project-specific rules, add a `GEMINI.md` at the project root:
+For language or project-specific rules, copy the appropriate `GEMINI.md` template to your project root. It will be auto-loaded alongside the global rules.
+
+### Setup for Flutter / Dart Projects
+
+```bash
+# Copy the Dart template to your project root
+cp ~/.gemini/rules/dart/GEMINI.md ~/path/to/my-flutter-app/GEMINI.md
+```
+
+Then customize the template for your project:
+- Set your state management library (Riverpod, BLoC, Provider, etc.)
+- Set your routing library (go_router, auto_route, etc.)
+- Add project-specific conventions and decisions
+
+### Setup for Python Projects
+
+```bash
+# Copy the Python template to your project root
+cp ~/.gemini/rules/python/GEMINI.md ~/path/to/my-python-api/GEMINI.md
+```
+
+Then customize the template for your project:
+- Set your framework (FastAPI, Django, Flask, etc.)
+- Set your ORM and database
+- Set your package manager (poetry, pip, uv, etc.)
+- Add project-specific conventions and decisions
+
+### How It Loads
 
 ```
-my-flutter-app/
-├── GEMINI.md              # Flutter-specific rules (auto-loaded)
-└── ...
+~/.gemini/GEMINI.md          ← Global rules (always loaded)
+    ↓ references
+~/.gemini/rules/*.md         ← Common rules (coding, security, delivery, testing)
+    ↓ language rules referenced from project GEMINI.md
+~/.gemini/rules/dart/*.md    ← Dart-specific rules
+~/.gemini/rules/python/*.md  ← Python-specific rules
+
+my-project/GEMINI.md         ← Project-specific rules (auto-loaded when in this project)
 ```
 
-Both the global `~/.gemini/GEMINI.md` and project-level `GEMINI.md` are loaded automatically.
+Both the global `~/.gemini/GEMINI.md` and project-level `GEMINI.md` are loaded automatically. The language-specific rule files are read when referenced.
 
 ## Key Standards
 
@@ -98,6 +142,20 @@ All agents and workflows include patterns for:
 # Clone to your home directory
 git clone https://github.com/abhishek-kulkarni/dot-gemini.git ~/.gemini
 ```
+
+### Quick Start
+
+1. Clone the repo (above).
+2. Copy a language template to your project:
+   ```bash
+   # For Flutter/Dart
+   cp ~/.gemini/rules/dart/GEMINI.md ~/my-flutter-app/GEMINI.md
+
+   # For Python
+   cp ~/.gemini/rules/python/GEMINI.md ~/my-python-api/GEMINI.md
+   ```
+3. Customize the project `GEMINI.md` with your framework, architecture, and conventions.
+4. Start coding — the rules and agents are active automatically.
 
 ## License
 
