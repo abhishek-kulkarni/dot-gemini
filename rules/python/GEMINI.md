@@ -9,6 +9,7 @@ Follow the Python-specific rules defined in these files:
 - [Python Coding Standards](./coding-standards.md) — PEP 8, type hints, comprehensions, async patterns.
 - [Python Security](./security.md) — SQL injection, dangerous functions, auth, dependency auditing.
 - [Python Testing](./testing.md) — pytest, fixtures, mocking, FastAPI & Django testing.
+- [Python Build Resolution](./build-resolution.md) — Mypy strict inference, missing types, package imports.
 
 ## Project Conventions
 

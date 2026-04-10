@@ -9,6 +9,7 @@ Follow the Dart-specific rules defined in these files:
 - [Dart Coding Standards](./coding-standards.md) — Null safety, sealed types, async patterns, widget rules, static analysis.
 - [Dart Security](./security.md) — Mobile security, WebView, data protection, secrets management.
 - [Dart Testing](./testing.md) — BLoC, Riverpod, widget & golden tests, fakes over mocks.
+- [Dart Build Resolution](./build-resolution.md) — Null safety fixes, generic types, build_runner troubleshooting.
 
 ## Project Conventions
 

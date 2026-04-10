@@ -11,6 +11,7 @@ Follow the rules defined in these files at all times:
 - [Delivery Standards](file:///Users/abhishekkulkarni/.gemini/rules/delivery.md) — Conventional commits, 95%+ coverage, test-first approach.
 - [Code Review Standards](file:///Users/abhishekkulkarni/.gemini/rules/code-review.md) — When to review, severity levels, agent routing.
 - [Testing Standards](file:///Users/abhishekkulkarni/.gemini/rules/testing.md) — 95%+ coverage, TDD workflow, edge cases, anti-patterns.
+- [Build Resolution](file:///Users/abhishekkulkarni/.gemini/rules/build-resolution.md) — Speed to green, minimal diffs, explicit typings.
 
 ## Areas To Reuse
 
@@ -21,3 +22,4 @@ Follow the rules defined in these files at all times:
   - [wf-do-clean-refactor](file:///Users/abhishekkulkarni/.gemini/antigravity/global_workflows/wf-do-clean-refactor.md)
   - [wf-get-commit-message](file:///Users/abhishekkulkarni/.gemini/antigravity/global_workflows/wf-get-commit-message.md)
   - [wf-review-code](file:///Users/abhishekkulkarni/.gemini/antigravity/global_workflows/wf-review-code.md)
+  - [wf-resolve-build](file:///Users/abhishekkulkarni/.gemini/antigravity/global_workflows/wf-resolve-build.md)

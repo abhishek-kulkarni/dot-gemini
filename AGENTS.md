@@ -23,6 +23,7 @@ This is a **production-ready AI coding plugin** providing specialized agents, wo
 | [doc-updater](file:///Users/abhishekkulkarni/.gemini/agents/doc-updater.md) | Documentation and codemaps | Updating docs |
 | [py-code-reviewer](file:///Users/abhishekkulkarni/.gemini/agents/py-code-reviewer.md) | Python code review | Python projects |
 | [flutter-dart-code-reviewer](file:///Users/abhishekkulkarni/.gemini/agents/flutter-dart-code-reviewer.md) | Flutter/Dart code review | Flutter projects |
+| [build-error-resolver](file:///Users/abhishekkulkarni/.gemini/agents/build-error-resolver.md) | Build and compiler fix specialist | When compiler or dependency builds fail |
 
 ## Agent Orchestration
 
@@ -30,6 +31,7 @@ Use agents proactively without user prompt:
 - Complex feature requests → **planner**
 - Code just written/modified → **code-reviewer**
 - Bug fix or new feature → **tdd-guide**
+- Compilation/build failure → **build-error-resolver**
 - Architectural decision → **architect**
 - Security-sensitive code → **security-reviewer**
 

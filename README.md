@@ -18,28 +18,33 @@ Inspired by and adapted from [everything-claude-code](https://github.com/affaan-
 │   ├── tdd-guide.md                    # Test-driven development guide
 │   ├── planner.md                      # Implementation planning
 │   ├── refactor-cleaner.md             # Technical debt cleanup
-│   └── doc-updater.md                  # Documentation & codemap generator
+│   ├── doc-updater.md                  # Documentation & codemap generator
+│   └── build-error-resolver.md         # Fixes compilation & type errors
 ├── rules/                             # Always-follow coding rules
 │   ├── coding-standards.md             # Immutability, size limits, constants
 │   ├── security.md                     # Pre-commit security checklist
 │   ├── delivery.md                     # Conventional commits, coverage, shipping
 │   ├── code-review.md                  # Review triggers, severity levels, routing
 │   ├── testing.md                      # 95%+ coverage, TDD, edge cases
+│   ├── build-resolution.md             # Speed to green, minimal diffs
 │   ├── dart/                           # Dart & Flutter specific
 │   │   ├── coding-standards.md         # Null safety, sealed types, async patterns
 │   │   ├── security.md                 # Mobile security, WebView, data protection
-│   │   └── testing.md                  # BLoC, Riverpod, widget & golden tests
+│   │   ├── testing.md                  # BLoC, Riverpod, widget & golden tests
+│   │   └── build-resolution.md         # Null safety, generic types, build_runner
 │   └── python/                         # Python specific
 │       ├── coding-standards.md         # PEP 8, type hints, comprehensions
 │       ├── security.md                 # SQL injection, dangerous functions, auth
-│       └── testing.md                  # pytest, fixtures, FastAPI & Django
+│       ├── testing.md                  # pytest, fixtures, FastAPI & Django
+│       └── build-resolution.md         # Mypy inference, missing types, imports
 └── antigravity/                       # Antigravity-specific config
     └── global_workflows/               # Slash-command workflows (/wf-*)
         ├── wf-tdd.md                   # Red-Green-Refactor TDD cycle
         ├── wf-plan.md                  # Feature planning workflow
         ├── wf-do-clean-refactor.md     # Code cleanup & refactoring
         ├── wf-get-commit-message.md    # Commit message generator
-        └── wf-review-code.md          # Multi-agent code review
+        ├── wf-review-code.md          # Multi-agent code review
+        └── wf-resolve-build.md         # Surgical build fixing
 ```
 
 ## How It Works
@@ -60,6 +65,7 @@ Specialized agents with deep expertise. Invoke by mentioning them in chat:
 - `@planner` — Structured implementation plans for complex features.
 - `@refactor-cleaner` — Dead code removal, complexity reduction.
 - `@doc-updater` — Documentation and codemap generation.
+- `@build-error-resolver` — Multi-language compiler/build error fixer.
 
 ### Workflows (Antigravity only, invoke with `/wf-*`)
 
@@ -70,6 +76,7 @@ Step-by-step automated workflows:
 - `/wf-do-clean-refactor` — Incremental cleanup with zero regressions.
 - `/wf-get-commit-message` — Analyze diff → generate conventional commit.
 - `/wf-review-code` — Orchestrate reviewers based on detected languages.
+- `/wf-resolve-build` — Diagnose → apply minimal fix → clear cache → verify.
 
 ## Per-Project Rules
 

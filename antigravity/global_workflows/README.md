@@ -11,6 +11,7 @@ Step-by-step automated workflows for Antigravity. Invoke with `/wf-*` slash comm
 | [Clean Refactor](wf-do-clean-refactor.md) | `/wf-do-clean-refactor` | Incremental code cleanup with zero regressions |
 | [Commit Message](wf-get-commit-message.md) | `/wf-get-commit-message` | Analyze diff and generate conventional commit message |
 | [Review Code](wf-review-code.md) | `/wf-review-code` | Orchestrate reviewers based on detected languages |
+| [Resolve Build](wf-resolve-build.md) | `/wf-resolve-build` | Surgically fix compiler errors with minimal patches |
 
 ## When to Use Each
 
@@ -22,6 +23,7 @@ Step-by-step automated workflows for Antigravity. Invoke with `/wf-*` slash comm
 | Ready to commit | `/wf-get-commit-message` |
 | Code ready for review | `/wf-review-code` |
 | Complex multi-file change | `/wf-plan` first |
+| Compiler/type check fails | `/wf-resolve-build` |
 
 ## Annotations
 
