@@ -64,6 +64,8 @@ String getUserName(User? user) {
 }
 ```
 
+- **Null vs Empty String:** Dart's `??` operator only catches `null`, not empty strings `""`. When reading remote or user-generated fields that might be empty, use `.isNotEmpty` checks instead of relying purely on `??` fallback chains.
+
 ## Sealed Types & Pattern Matching (Dart 3+)
 
 Use sealed classes to model closed state hierarchies:
@@ -165,6 +167,17 @@ await fetchData();      // or properly awaited
 - No `.listen()` or subscription creation in `build()`.
 - Colors from `Theme.of(context).colorScheme` — no hardcoded `Colors.red` or hex values.
 - Text styles from `Theme.of(context).textTheme` — no inline `TextStyle` with raw font sizes.
+
+## Flutter API Gotchas
+
+- **Stable Builders:** Never initialize a `Stream` or `Future` directly inside a `build` method (e.g., `future: api.getData()`). This causes the builder to reset and "flicker" on every UI rebuild. Always convert the widget to a `StatefulWidget` and initialize the `Stream` or `Future` once in `initState()`.
+- **Flutter 3.27+ Colors:** `Color.r`, `.g`, `.b` return **normalized doubles** (0.0–1.0), NOT integers (0–255). Casting them directly to `int` (e.g., `color.r.toInt()`) will produce `0` (black). Always multiply by 255 first: `(color.r * 255).round()`.
+- **Deprecated APIs:** Prefer `.withValues(alpha: x)` over the deprecated `.withOpacity(x)`.
+
+## Platform Separation (Web vs Mobile)
+
+- Guard mobile-specific APIs (push notifications, deep links, native file system) with `!kIsWeb` to prevent crashes on the web target.
+- Wrap mobile-only or web-only heavy logic into distinct conditional rendering blocks or platform wrapper classes.
 
 ## Static Analysis
 
