@@ -10,6 +10,11 @@ tools: Use any tools necessary for analyzing git changes
 
 Generate a descriptive yet concise conventional commit message based on the actual code changes.
 
+> [!IMPORTANT]
+> **Mandatory Rules:**
+> 1. **ALWAYS run the git commands** in Step 1. DO NOT rely on previous conversation history or your memory of what was changed. The local state may have changed (commits, restores, or pushes).
+> 2. **DO NOT run commands in the background** (e.g., set `WaitMsBeforeAsync` to a high value). Analysis requires immediate output to ensure accuracy.
+
 ## Process
 
 ### Step 1: Gather Changes
