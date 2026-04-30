@@ -66,7 +66,7 @@ Document how each point will be addressed in the plan.
 
 ### Step 4: Design the Solution
 
-Delegate to the `@planner` agent to structure the plan with clear phases:
+Delegate to the `@architect` agent to design the system structure and the `@planner` agent to format the phased implementation plan:
 
 **Phase sizing:**
 - **Phase 1**: Minimum viable — smallest slice that provides value
@@ -91,7 +91,8 @@ Use this format:
 > [Breaking changes, critical design decisions, security implications]
 
 ## Architecture & Security
-- **Security Checklist**: [How each point is addressed]
+- **Architecture**: [Pattern/Structure vetted by `@architect`]
+- **Security Checklist**: [How each point is addressed via `@security-reviewer`]
 - **Storage/State**: [Immutable state management pattern]
 - **Design/UX**: [Aesthetic considerations if UI is involved]
 
@@ -135,6 +136,7 @@ Before presenting the plan, verify it doesn't have these problems:
 | Hardcoded values in the design | Plan for constants and env vars |
 | Missing error handling | Add error path steps |
 | No security considerations | Run Step 3 again |
+| Architectural Red Flags | Consult `@architect` Red Flags list |
 
 ### Step 7: Present for Review
 

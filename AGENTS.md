@@ -15,7 +15,7 @@ This is a **production-ready AI coding plugin** providing specialized agents, wo
 | Agent | Purpose | When to Use |
 |-------|---------|-------------|
 | [planner](file:///Users/abhishekkulkarni/.gemini/agents/planner.md) | Implementation planning | Complex features, refactoring |
-| architect | System design and scalability | Architectural decisions |
+| [architect](file:///Users/abhishekkulkarni/.gemini/agents/architect.md) | System design and scalability | Architectural decisions |
 | [tdd-guide](file:///Users/abhishekkulkarni/.gemini/agents/tdd-guide.md) | Test-driven development | New features, bug fixes |
 | [code-reviewer](file:///Users/abhishekkulkarni/.gemini/agents/code-reviewer.md) | Code quality and maintainability | After writing/modifying code |
 | [security-reviewer](file:///Users/abhishekkulkarni/.gemini/agents/security-reviewer.md) | Vulnerability detection | Before commits, sensitive code |
@@ -32,7 +32,7 @@ Use agents proactively without user prompt:
 - Code just written/modified → **code-reviewer**
 - Bug fix or new feature → **tdd-guide**
 - Compilation/build failure → **build-error-resolver**
-- Architectural decision → **architect**
+- Architectural decision → **@architect**
 - Security-sensitive code → **security-reviewer**
 
 Use parallel execution for independent operations — launch multiple agents simultaneously.

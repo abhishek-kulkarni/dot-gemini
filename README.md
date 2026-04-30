@@ -12,6 +12,7 @@ Inspired by and adapted from [everything-claude-code](https://github.com/affaan-
 ├── AGENTS.md                          # Agent operating standards
 ├── agents/                            # Specialized AI agents
 │   ├── code-reviewer.md               # General code quality reviewer
+│   ├── architect.md                   # System design & scalability
 │   ├── flutter-dart-code-reviewer.md   # Deep Flutter/Dart reviewer
 │   ├── py-code-reviewer.md             # Deep Python reviewer
 │   ├── security-reviewer.md            # Security vulnerability scanner
@@ -59,6 +60,7 @@ Specialized agents with deep expertise. Invoke by mentioning them in chat:
 
 - `@code-reviewer` — General quality, immutability, patterns across all languages.
 - `@flutter-dart-code-review` — Flutter widgets, state management, Dart idioms.
+- `@architect` — System design, scalability, patterns, and trade-off analysis.
 - `@python-reviewer` — PEP 8, type hints, Django/FastAPI/Flask.
 - `@security-reviewer` — OWASP Top 10, secrets detection, dependency audits.
 - `@tdd-guide` — Test-first methodology with 95%+ coverage.

@@ -19,6 +19,7 @@ Specialized AI agents with deep expertise in specific domains. Each agent is a m
 |-------|------|---------------|
 | `@tdd-guide` | [tdd-guide.md](tdd-guide.md) | Test-driven development with 95%+ coverage, security-first testing, multi-language |
 | `@planner` | [planner.md](planner.md) | Implementation planning for complex features — phasing, TDD cycles, security audit |
+| `@architect` | [architect.md](architect.md) | System design, scalability, technical trade-offs, patterns, and ADR documentation |
 | `@refactor-cleaner` | [refactor-cleaner.md](refactor-cleaner.md) | Technical debt cleanup — dead code, complexity reduction, immutability enforcement |
 | `@doc-updater` | [doc-updater.md](doc-updater.md) | Documentation & codemap generation for Node.js, Flutter, Python, and Java projects |
 | `@build-error-resolver` | [build-error-resolver.md](build-error-resolver.md) | Resolves build/type errors rapidly with minimal diffs and no refactoring |
