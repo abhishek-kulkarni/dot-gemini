@@ -78,10 +78,16 @@ Combine all findings into a single unified report:
 ## Unified Review Report
 
 ### Code Review (code-reviewer)
-[Findings from Step 2]
+- **CRITICAL**: [List issues or "None"]
+- **HIGH**: [List issues or "None"]
+- **MEDIUM**: [List issues or "None"]
+- **LOW**: [List issues or "None"]
 
 ### Security Review (security-reviewer)
-[Findings from Step 3]
+- **CRITICAL**: [List issues or "None"]
+- **HIGH**: [List issues or "None"]
+- **MEDIUM**: [List issues or "None"]
+- **LOW**: [List issues or "None"]
 
 ### Coverage Status
 [Pass/Fail from Step 4]
